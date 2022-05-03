@@ -12,8 +12,14 @@ h1{
     font-size: larger;
 }
 
+.lien-encadre{
+    border: #ee5b83 solid 1px;
+    padding: 0.5em 1em;
+    color: #ee5b83;
+}
+
 body{
-    background: linear-gradient(#d1933d, #d1456f);
+    background: linear-gradient(#b68540, #ee5b83);
     width: 100%;
 }
 
@@ -85,7 +91,7 @@ header nav a{
 
 /*toutes les sections incluses dans le main*/
 main{
-    background-color: azure;
+    background-color: white;
 }
 
 #banner{
@@ -132,19 +138,136 @@ main{
 #promotion{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     padding: 4% 8%;
 }
 
 #promotion .colonne{
     width: 30%;
     margin: 1.5%;
-    background-color: red;
 }
 
-/* #promotion h2{
-h
-} */
+.colonne h2{
+    font-size: x-large;
+    margin: 1em auto;
+}
+
+.colonne p{
+    margin: 1em auto;
+}
+
+.image-argument{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.image-argument i{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+
+.argument{
+    width: 75%;
+}
+
+.etendable{
+    border: solid 1px black;
+    margin: 1em auto;
+    display: flex;
+    padding: 0.3em 0.5em 0.3em 0.3em;
+}
+
+.etendable i{
+    width: 20%;
+    text-align: center;
+}
+
+.argument-etendable{
+    width: 80%;
+}
+
+.argument-etendable h4{
+    font-size: 1.1em;
+}
+
+.colonne i, .colonne a{
+    color:#ee5b83;
+    text-decoration: none;
+}
+
+/* section multimedia */
+
+#multimedia figure{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#multimedia figure img{
+    width: 25%;
+}
+
+#menu-multimedia{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+}
+
+#menu-multimedia nav{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+#menu-multimedia a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+#menu-multimedia .lien-encadre{
+    color: #ee5b83;
+}
+
+#menu-multimedia .lien-actuel{
+    color: #ee5b83;
+}
+
+/* testimonial */
+
+#testimonial .container{
+    margin: 1em 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#testimonial .commentaire{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+#testimonial .commentaire-paire{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1em;
+    text-align: right;
+}
+
+#testimonial figure{
+    width: 10%;
+}
+
+#testimonial .citation{
+    width: 90%;
+    margin: auto 1em;
+}
+
+
 
 
 
