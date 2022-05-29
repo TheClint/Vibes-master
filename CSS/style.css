@@ -16,6 +16,8 @@ h1{
     border: #ee5b83 solid 1px;
     padding: 0.5em 1em;
     color: #ee5b83;
+    text-decoration: none;
+    font-size: large;
 }
 
 body{
@@ -26,6 +28,26 @@ body{
 #container{
     width: 85%;
     margin: auto;
+}
+
+/* trait sous les titres */
+.titre-trait{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trait{
+    height: 1px;
+    width: 50px;
+    margin: 0.5em 0px;
+    border: solid 1px;
+    border-color:  #da607e;
+}
+
+hr{
+    border-top: 1px solid #d8d8d8;
+    color: white;
 }
 
 /* header */
@@ -112,9 +134,9 @@ main{
 #banner article{
     /* mise en position absolu de l'article pour qu'il se mette sur l'image, et formatage de la taille pour qu'elle reste à une certaine position */
     position: absolute;
-    height: 55%;
+    height: 65%;
     width: 60%;
-    top: 40%;
+    top: 25%;
     left: 20%;
     /* utilisation du flex pour placer le text dans la box article */
     display: flex;
@@ -127,10 +149,8 @@ main{
 }
 
 #banner a{
-    text-decoration: none;
     color: white;
-    padding: 4px;
-    border: solid 1px;
+   border-color: white;
 }
 
 /* section promotion */
@@ -238,7 +258,7 @@ main{
 /* testimonial */
 
 #testimonial .container{
-    margin: 1em 10%;
+    margin: 2em 10%;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -266,6 +286,54 @@ main{
     width: 90%;
     margin: auto 1em;
 }
+
+#testimonial blockquote{
+    font-style: italic;
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+#testimonial figcaption{
+    margin: 1em 0em;
+    font-style: italic;
+}
+
+#testimonial .name{
+    font-weight: bolder;
+    font-style: normal;
+}
+
+/* new horizon */
+
+
+#new-horizons-await{
+    /* effet paralaxe */
+    background-image: url("../image/background/ciel-etoile-vibes.jpg");
+
+    /* taille minimum pour avoir de la marge */
+    min-height: 350px;
+
+    /* creation de l'effet de scroll fixé */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#new-horizons-await h1, #new-horizons-await p, #new-horizons-await a{
+    color: white;
+}
+
+#new-horizons-await p{
+    width: 60%;
+    text-align: center;
+}
+
 
 
 
