@@ -167,41 +167,51 @@
                     <div class="trait"></div>
                 </div>
                 <form>
-                    <span>YOUR NAME <em>*</em><br><input type="text" name="Your name" id="name"></span>
-                    <span>YOUR EMAIL <em>*</em><br><input type="email" name="your email" id="mail"></span>
-                    <span>YOUR PHONE <br><input type="number" name="your phone" id="phonenumber"></span>
-                    <span>SUBJECT<br><input type="text" name="subject" id="subject"></span>
-                    <span>MESSAGE<em>*</em><br><input type="message" name="message" id="message"></span>
-                    <input type="submit" name="SEND" value="SEND" id="send">
+                    <div>
+                        <div class="block-text-input"><span>YOUR NAME<em>*</em></span><input type="text" name="Your name" id="name"></div>
+                        <div class="block-text-input"><span>YOUR EMAIL<em>*</em></span><input type="email" name="your email" id="mail"></div>
+                        <div class="block-text-input"><span>YOUR PHONE </span><input type="text" name="your phone" id="phonenumber"></div>
+                    </div>
+                    <div>
+                        <div class="block-text-input"><span>SUBJECT</span><input type="text" name="subject" id="subject"></div>
+                        <div class="block-text-input" id="textarea"><span>MESSAGE<em>*</em></span><textarea name="message" id="message"></textarea></div>
+                    </div>
                 </form>
+                <div id="ligne-bouton">
+                    <div></div>
+                    <div><input type="submit" name="SEND" value="SEND" id="send"></div>
+                </div>
             </section>
-            <section>
+            <section id="about-us">
                 <div id="about-vibes">
                     <h2>ABOUT VIBES</h2>
+                    <div class="trait"></div>
                     <p>VIBES is an ideal theme for creative folks or design agencies. <strong>Ease of use and top-notch web design techniques</strong> are wrapped with several gorgeois color schemes.</p>
                     <p>You can buy this responsive WordPress theme on <a href="">ThemeForest</a>.</p>
                 </div>
                 <div id="newletter">
                     <h2>NEWSLETTER</h2>
+                    <div class="trait"></div>
                     <p><strong>VIBES</strong> contains fully working <strong>MailChimp</strong> subscribe form.</p>
                     <form>
-                        <input type="email" value="Your Email Address" name="mail-address" id="mail-address">
-                        <input type="submit" value="SUBSCRIBE" name="subscribe" id="subscribe">
+                        <input type="email" placeholder="Your Email Address" name="mail-address" id="mail-address">
+                        <input class="lien-encadre" type="submit" value="SUBSCRIBE" name="subscribe" id="subscribe">
                     </form>
                 </div>
                 <div id="twitter-feed">
                     <h2>TWITTER FEED</h2>
+                    <div class="trait"></div>
                     <span>_ _ _ _ _</span>
                 </div>  
             </section>
         </main>
         <footer class="container">
             <span>Buy this theme on <a href="">ThemeForest.net</a></span>
-                <nav>
+            <nav>
                     <a href="">Home</a>
                     <a href="">Elements</a>
                     <a href="">Documentation</a>
-                </nav>
+            </nav>
         </footer>
     </div>
 </body>

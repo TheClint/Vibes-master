@@ -275,15 +275,16 @@ main{
     display: flex;
     flex-direction: row-reverse;
     margin: 1em;
-    text-align: right;
+    text-align: right;  
 }
 
-#testimonial figure{
-    width: 10%;
+#testimonial figure img{
+    min-width: 100px;
+    min-height: 100px;
 }
 
 #testimonial .citation{
-    width: 90%;
+    width: auto;
     margin: auto 1em;
 }
 
@@ -333,6 +334,143 @@ main{
     width: 60%;
     text-align: center;
 }
+
+/* Formulaire inscription*/
+
+#inscription{
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#inscription em{
+    color:#ee5b83;
+}
+
+#inscription form{
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+}
+
+#inscription form div{
+    width: 100%;
+    height: auto;
+}
+
+.block-text-input{
+    padding: 0em 1em;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7em;
+    font-weight: lighter;
+    height: 33%;
+}
+
+.block-text-input input{
+    border: none;
+    background-color: #eeeeee;
+    height: 30px;
+}
+
+.block-text-input span{
+    margin-top: 1em;
+}
+
+#textarea{
+    height: 66%;
+}
+
+#textarea textarea{
+    height: 84px;
+    border: none;
+    background-color: #eeeeee;
+}
+
+#send{
+    color: white;
+    background-color: #ee5b83;
+    border: none;
+    padding: 0.5em 1em;
+    font-weight: bold;
+}
+
+#ligne-bouton{
+    display: flex;
+    flex-direction: row;
+    margin: 0.7em 0em;
+}
+
+#ligne-bouton div{
+    width: 50%;
+    padding: 0em 0.7em;
+}
+
+/* about-us */
+
+#about-us{
+    display: flex;
+    flex-direction: row;
+    padding: 5em 10%;
+    background-color: #161616;
+    color: white;
+}
+
+#about-us div{
+    width: 30%;
+    padding: 0em 1em;
+    font-size: 0.7em;
+}
+
+#about-us .trait{
+    width: 30px;
+}
+
+#about-us div p{
+    padding: 1em 0em;
+}
+
+#about-us div strong{
+    font-weight: 900;
+}
+
+#about-us a{
+    text-decoration: none;
+    color: #ee5b83;
+}
+
+#mail-address{
+    background-color: #2e2e2e;
+    border: none;
+    color: white;
+    padding: 0.5em;
+    width: 100%;
+}
+
+#about-us .lien-encadre{
+    background-color: #161616;
+    color: white;
+    margin: 0.5em 0em;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 1em;
+    font-size: 0.7em;
+}
+
+footer a{
+    text-decoration: white;
+    color: white;
+}
+
+
+
 
 
 
